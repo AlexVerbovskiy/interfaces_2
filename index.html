@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="modal_trigger" style="display: none;" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+
+    </button>
+
+    <header>
+        <div class="container">
+            <div id="logo">
+                <img src="./images/logo.png">
+            </div>
+            <div id="menu">
+                <button class="menu-btn active" data-key="1">inicio</button>
+                <button class="menu-btn" data-key="2">nosotros</button>
+                <button class="menu-btn" data-key="3">producctos</button>
+                <button class="menu-btn" data-key="4">distribudores</button>
+                <button class="menu-btn" data-key="5">contacto</button>
+
+
+                <button class="menu-btn active" type="button" id="open_menu">
+                    Menu
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenu">
+        <button class="menu-btn active" data-key="1">inicio</button>
+        <button class="menu-btn" data-key="2">nosotros</button>
+        <button class="menu-btn" data-key="3">producctos</button>
+        <button class="menu-btn" data-key="4">distribudores</button>
+        <button class="menu-btn" data-key="5">contacto</button>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/slider.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/slider copia 2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/slider copia 3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <div class="arrow">
+                <img src="/images/l_arrow.png">
+            </div>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <div class="arrow">
+                <img src="/images/r_arrow.png">
+            </div>
+        </button>
+    </div>
+
+    <div id="parentProductList">
+        <div id="productList" class="container">
+            <div class="product-card">
+                <img src="/images/product_1.png">
+                <div>
+                    <h2>Tienda en línea</h2>
+                    <div class="description">Todo nuestro catálogo de productos online disponible solo para.</div>
+                </div>
+
+                <button>
+                    Leer más
+                    <span class="circle-plus">
+                        <div>+</div>
+                    </span>
+                </button>
+            </div>
+
+            <div class="product-border"></div>
+
+            <div class="product-card">
+                <img src="/images/product_2.png">
+                <div>
+                    <h2>Trabajemos</h2>
+                    <div class="description">Conviértete en un distribuidor autorizado en tu región, trabajemos juntos.
+                    </div>
+                </div>
+
+                <button>
+                    Leer más
+                    <span class="circle-plus">
+                        <div>+</div>
+                    </span>
+                </button>
+            </div>
+
+            <div class="product-border"></div>
+
+            <div class="product-card">
+                <img src="/images/product_3.png">
+                <div>
+                    <h2>Descuentos</h2>
+                    <div class="description">Conoce beneficios y descuentos pensados solo para tí.</div>
+                </div>
+
+                <button>
+                    Leer más
+                    <span class="circle-plus">
+                        <div>+</div>
+                    </span>
+                </button>
+            </div>
+
+            <div class="product-border"></div>
+
+            <div class="product-card">
+                <img src="/images/product_4.png">
+                <div>
+                    <h2>Nosotros</h2>
+                    <div class="description">Enterate de todo lo que tenemos planeado para tí.</div>
+                </div>
+
+                <button>
+                    Leer más
+                    <span class="circle-plus">
+                        <div>+</div>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="parentInfo">
+        <div id="info" class="container">
+            <div class="info-block">
+                <h2>Quiénes somos</h2>
+                <div class="description">Somos una empresa de confección de ropa interior de la ciudad de Medellín,
+                    somos innovadores y comprometidos con nuestro trabajo donde brindamos lo mejor de nosotros a cada
+                    uno de nuestros clientes.Suspendisse et tortor! Fusce cursus egestas velit. </div>
+                <h2>Lo que nos gusta hacer</h2>
+                <div class="description">Trabajar con pasión y empeño pr darles a nuestros clientes lo mejor de nuestro
+                    talento para satisfacer sus necesidades.Suspendisse et tortor! Fusce cursus egestas velit.</div>
+
+                <div>
+                    <img src="/images/qq.png">
+                    <div class="comment">“La originalidad no consiste en decir cosas nuevas, sino en decirlas como si
+                        nunca hubiesen sido dichas por otro.Suspendisse et tortor! Fusce cursus egestas velit. “</div>
+                </div>
+            </div>
+            <div class="product-border"></div>
+            <div class="info-block">
+                <h2>Vendedoras estrella</h2>
+                <div class="description">Estas son algunas de nuestras vendedoras estrella en Colombia, tu también
+                    puedes estar en este lugar.Suspendisse et tortor! Fusce cursus egestas velit. </div>
+
+                <div class="masters">
+                    <div class="master">
+                        <div class="body">
+                            <img src="/images/master_1.png">
+                            <p>Heydi Milena Rua</p>
+                        </div>
+                        <div class="icons">
+                            <img src="/images/icon_1.png">
+                            <img src="/images/icon_2.png">
+                            <img src="/images/icon_3.png">
+                        </div>
+                    </div>
+                    <div class="master">
+                        <div class="body">
+                            <img src="/images/master_2.png">
+                            <p>Erika Durán</p>
+                        </div>
+                        <div class="icons">
+                            <img src="/images/icon_1.png">
+                            <img src="/images/icon_2.png">
+                            <img src="/images/icon_3.png">
+                        </div>
+                    </div>
+                    <div class="master">
+                        <div class="body">
+                            <img src="/images/master_3.png">
+                            <p>Lía Pimienta</p>
+                        </div>
+                        <div class="icons">
+                            <img src="/images/icon_1.png">
+                            <img src="/images/icon_2.png">
+                            <img src="/images/icon_3.png">
+                        </div>
+                    </div>
+                    <div class="master">
+                        <div class="body">
+                            <img src="/images/master_4.png">
+                            <p>Carolina Páez</p>
+                        </div>
+                        <div class="icons">
+                            <img src="/images/icon_1.png">
+                            <img src="/images/icon_2.png">
+                            <img src="/images/icon_3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sub_info" class="container">
+            <div class="custom-main-icon">
+                <div class="p1"></div>
+                <div class="p2">
+                    <img src="/images/icon_1_2.png">
+                </div>
+            </div>
+            <div class="inner-text">Bésame sigue cambiando la vida de muchas mujeres en Colombia,
+                <div class="link-text"> About 10 hours ago. from <a href="#">Web</a></div>
+            </div>
+
+            <div class="custom-icon">
+                <a href="https://twitter.com/?lang=uk" class="p2">
+                    <img src="/images/icon_1.png">
+                </a>
+                <div class="p1"></div>
+            </div>
+
+            <div class="custom-icon">
+                <a href="https://www.facebook.com/" class="p2">
+                    <img src="/images/icon_2_2.png">
+                </a>
+                <div class="p1"></div>
+            </div>
+
+            <div class="custom-icon">
+                <a href="https://www.linkedin.com/feed/" class="p2">
+                    <img src="/images/icon_3_2.png">
+                </a>
+                <div class="p1"></div>
+            </div>
+
+            <div class="custom-icon">
+                <a href="https://dictionary.cambridge.org/ru/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9/fr" class="p2">
+                    <img src="/images/icon_4.png">
+                </a>
+                <div class="p1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="parentFooter">
+        <div id="footer" class="container">
+            <div class="part1">
+                <div class="header">
+                    <h2>Hablemos</h2>
+                    <p class="white">Envíanos tus inquietudes acerca de nosotros</p>
+                </div>
+                <div class="main-border"></div>
+                <div class="body">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="E-mail">
+                    <textarea rows="4" placeholder="Comentarios"></textarea>
+
+                    <button>
+                        Enviar!
+                        <span class="circle-plus">
+                            <div>></div>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="part2">
+                <div class="header">
+                    <h2>Testimonios</h2>
+                    <p class="white">Algunos comentarios de nuestras vendedoras</p>
+                </div>
+                <div class="main-border"></div>
+                <div class="body">
+                    <div class="wbold">Martha Loaiza</div>
+                    <div class="wbold">Agosto 17th 2011</div>
+                    <div class="pinq">Bésame me llevó a la independencia.</div>
+
+                    <div class="wbold pt">Lía Janeth Sepúlveda</div>
+                    <div class="wbold">Agosto 19th 2010</div>
+                    <div class="pinq">Con Bésame he aumentado mis ingresos.</div>
+
+                    <div class="wbold pt">Juana Jiménez</div>
+                    <div class="wbold">Septiembre 6 2010</div>
+                    <div class="pinq">Ahora soy toda una empresaria.</div>
+                </div>
+            </div>
+            <div class="part3">
+                <div class="header">
+                    <h2>Liderazgo</h2>
+                    <p>Sigue las actualizaciones de nuestro blog</p>
+                </div>
+                <div class="main-border"></div>
+                <div class="body">
+                    <div class="qbold">Mujeres libres e independientes</div>
+                    <div class="wbold">01.5.2010</div>
+                    <div class="white">Aún recuerdo aquellos días cuando las mujeres buscaban ropa femenina.</div>
+
+                    <div class="qbold pt">Un negocio que funciona en casa</div>
+                    <div class="wbold">20.12.2009</div>
+                    <div class="white">Existen muchas opciones de negocios que puedes realizar desde tu casa.</div>
+
+                    <button>
+                        Leer más
+                        <span class="circle-plus">
+                            <div>></div>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-border"></div>
+
+    <div id="underground">
+        <div class="container">
+            <div><img src="images/f.png"></div>
+            <div><img src="images/f_1.png"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+    <script>
+        document.querySelector("#open_menu").addEventListener("click", e => {
+            document.querySelector("#mobileMenu").classList.toggle("active");
+        })
+
+        document.querySelectorAll(".menu-btn:not(#open_menu)").forEach(elem => elem.addEventListener("click", e => {
+            document.querySelectorAll(".menu-btn:not(#open_menu)").forEach(elem => elem.classList.remove(
+                "active"))
+            document.querySelectorAll(".menu-btn[data-key='" + e.target.dataset.key + "']").forEach(elem =>
+                elem.classList.add("active"))
+        }))
+
+        document.querySelectorAll("#parentProductList button").forEach(btn => {
+            btn.addEventListener("click", e => {
+                document.querySelector(".modal-body").innerHTML = "Some spanish text 2";
+                document.querySelector("#modal_trigger").click()
+            })
+        })
+
+        document.querySelector(".part1 button").addEventListener("click", e => {
+            document.querySelector(".modal-body").innerHTML = "Some spanish text 2";
+            document.querySelector("#modal_trigger").click()
+        })
+
+        document.querySelector(".part3 button").addEventListener("click", e => {
+            document.querySelector(".modal-body").innerHTML = "Some spanish text 3";
+            document.querySelector("#modal_trigger").click()
+        })
+    </script>
+</body>
+
+</html>
